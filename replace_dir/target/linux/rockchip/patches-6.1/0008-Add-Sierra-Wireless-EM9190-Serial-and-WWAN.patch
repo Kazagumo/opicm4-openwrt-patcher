@@ -1,0 +1,24 @@
+diff --git a/drivers/net/usb/qmi_wwan.c b/drivers/net/usb/qmi_wwan.c
+index 6a2e4f884..a1cb0d349 100644
+--- a/drivers/net/usb/qmi_wwan.c
++++ b/drivers/net/usb/qmi_wwan.c
+@@ -1347,6 +1347,7 @@ static const struct usb_device_id products[] = {
+	{QMI_QUIRK_SET_DTR(0x1199, 0x907b, 10)},/* Sierra Wireless EM74xx */
+	{QMI_QUIRK_SET_DTR(0x1199, 0x9091, 8)},	/* Sierra Wireless EM7565 */
+	{QMI_QUIRK_SET_DTR(0x1199, 0xc081, 8)},	/* Sierra Wireless EM7590 */
++	{QMI_QUIRK_SET_DTR(0x1199, 0x90d3, 8)},	/* Sierra Wireless EM9190 */
+	{QMI_FIXED_INTF(0x1bbb, 0x011e, 4)},	/* Telekom Speedstick LTE II (Alcatel One Touch L100V LTE) */
+	{QMI_FIXED_INTF(0x1bbb, 0x0203, 2)},	/* Alcatel L800MA */
+	{QMI_FIXED_INTF(0x2357, 0x0201, 4)},	/* TP-LINK HSUPA Modem MA180 */
+diff --git a/drivers/usb/serial/qcserial.c b/drivers/usb/serial/qcserial.c
+index 9c5c4f9ed..0c6836b70 100644
+--- a/drivers/usb/serial/qcserial.c
++++ b/drivers/usb/serial/qcserial.c
+@@ -169,6 +169,7 @@ static const struct usb_device_id id_table[] = {
+	{DEVICE_SWI(0x1199, 0x90b0)},	/* Sierra Wireless EM7421 QDL */
+	{DEVICE_SWI(0x1199, 0x90b1)},	/* Sierra Wireless EM7421 */
+	{DEVICE_SWI(0x1199, 0x90d2)},	/* Sierra Wireless EM9191 QDL */
++	{DEVICE_SWI(0x1199, 0x90d3)},	/* Sierra Wireless EM9191 */
+	{DEVICE_SWI(0x1199, 0xc080)},	/* Sierra Wireless EM7590 QDL */
+	{DEVICE_SWI(0x1199, 0xc081)},	/* Sierra Wireless EM7590 */
+	{DEVICE_SWI(0x413c, 0x81a2)},	/* Dell Wireless 5806 Gobi(TM) 4G LTE Mobile Broadband Card */

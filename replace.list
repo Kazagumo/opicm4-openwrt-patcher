@@ -1,0 +1,3 @@
+package/boot/rkbin/
+package/boot/uboot-rockchip/
+target/linux/rockchip/
