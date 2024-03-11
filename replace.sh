@@ -1,7 +1,7 @@
 #!/bin/bash
 # author:Kazagumo
 # description:simpily replace the file of openwrt for some device
-$REPO="opicm4-openwrt-patcher"
+REPO="opicm4-openwrt-patcher"
 SCRIPT_PATH=$PWD"/"$REPO
 OP_PATH=$PWD
 
